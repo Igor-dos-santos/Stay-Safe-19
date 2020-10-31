@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--This is to make the page responsive to different devices-->
+    <link rel="stylesheet" href="ss_19.css"> <!--This is the link to the css file -->
+  
+  
+
+
+    <title>Stay Safe 19</title>
+  </head>
+  <body>
+
+    <div class="row" >
+      
+      <h1>Stay Safe 20</h1>
+    </div>
+
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">Products</a>
+      <a href="#contact">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">About us...
+          <i class="fa fa-caret-down"></i>
+        </button>
+        
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+          <a href="#">Link 5</a>
+        </div>
+      </div>
+      <a href="#about">The Company</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <script>
+    
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+    x.className += " responsive";
+     } else {
+      x.className = "topnav";
+  }
+}
+    </script>
+
+  <div class="middle"> <!--This is the middle part of the website-->
+
+  </div>
+
+  </body>
+</html>
