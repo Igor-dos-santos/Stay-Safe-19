@@ -16,8 +16,9 @@ font-family: sans-serif;
 color: white;
 }
 
+
 .row{
-  float: right;
+  float:right;
 }
 
 h1{
@@ -159,10 +160,10 @@ h1{
 }
 
 /* About Css (practice)*/
-div.MVV {
+.MVV {
   height: 500px;
   width:100%;
-  margin-top: 10px;
+  margin-top: 1px;
   
 }
 
