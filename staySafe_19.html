@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!--This is to make the page responsive to different devices-->
     <link rel="stylesheet" href="staySafe.css"> <!--This is the link to the css file -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!--From getBootstrap Css -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+            <!-- These are the script links for the carrousel-->    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    
+    
     <title>Stay Safe 19</title>
   </head>
   <body>
 
     <div class="row" >
       
-      <h1>Stay Safe 19</h1>
+      <h1 class="logo">Stay Safe 19</h1>
     </div>
 
     <div class="topnav" id="myTopnav">
-      <a href="staySafe_19.html" class="active">Home</a>
+      <a href="ssLogo.png" class="active">Home</a>
       <a href="products.html">Products</a>
       <a href="contact.html">Contact</a>
       
@@ -32,10 +39,70 @@
           <a href="#">Link 4</a>
           <a href="#">Link 5</a>
         </div>
-        <a href="company.html">The Company</a>
       </div>
+      <a href="company.html">The Company</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
+
+
+
+
+
+
+
+    <!--CAROUSEL-->
+<div class="jumbotron">
+  <div class="container text-center">
+
+
+    <div class="container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="crow-bar.jpg" alt="Photo1" style="width:100%; max-height:500px;">
+          </div>
+
+          <div class="item">
+            <img src="crowsignfull.jpg" alt="photo2" style="width:100%;%; max-height:500px;">
+          </div>
+
+          <div class="item">
+            <img src="oldcrowbar.jpg" alt="photo3" style="width:100%;%; max-height:500px;">
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+<!--END OF CAROUSEL-->
+
+
+
+
+
+
+
 
     <script>
     
