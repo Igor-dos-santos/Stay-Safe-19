@@ -46,7 +46,11 @@ h1{
 
 
 .middle{
-  height: 40%;
+  height: 1500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center; /* Center the image */
+  background-image: url("ssLogo.png");
 }
 
 
