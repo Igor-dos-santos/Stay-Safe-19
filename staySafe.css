@@ -61,11 +61,18 @@ h1{
   font-size: 17px;
 }
 
-/* Add an active class to highlight the current page */
-.active {
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
   background-color: #030d76;
   color: white;
 }
+
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
