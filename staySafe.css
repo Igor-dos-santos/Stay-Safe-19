@@ -1,10 +1,3 @@
-*{   /* Home Page */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
 body{
 height: 1000px;
 width: 100%;
@@ -22,41 +15,41 @@ color: white;
   float:right;
 }
 
-h1{
+.logo{
   color: white;
   background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
   float: right;
   margin-left: 0;
   margin-top: 1px;
   margin-right: 1px;
-  padding: 2.5px 4px;
+  margin-bottom: 0%;
+  padding: 6px 8px;
   
 }
 
 
 /* This part is about the carrousel   */
-
-
 .jumbotron{
   min-height: 550px;
-  background-color: #330000;
+  background-color: #ffffff;
 }
+/* End of carrousel */
 
 
-
-
-.middle{
-  height: 1500px;
+/* Middle part of the website with the logo */
+.jumbotron_middle{
+  position: relative;
+  background: #fff url("ssLogo.png") center; /*Image*/  
   width: 100%;
-  background-repeat: no-repeat;
-  background-position: center; /* Center the image */
-  background-image: url("ssLogo.png");
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+  padding
 }
+/* end of the middle part of the website with the logo */
 
 
 /*  This section is all about the navbar   */
-
-
 /* background color to the top navigation */
 .topnav {
   /*background-color: rgb(10, 57, 77); inicial background colour   */
@@ -80,20 +73,6 @@ h1{
   background-color: #030d76;
   color: white;
 }
-
-/* Change the color of links on hover 
-****delete this****
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-} 
-
-   Add a color to the active/current link 
-.topnav a.active {
-  background-color: #030d76;
-  color: white;
-****delete this**** } */
-
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
