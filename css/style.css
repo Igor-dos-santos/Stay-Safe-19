@@ -1,0 +1,25 @@
+    /* Make carrousel image fully responsive */
+  .carousel-inner img {
+    width: 70%;
+    max-height: 500px;
+  }
+
+    /* Navbar */
+  #navb{
+    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+  }
+
+    /* Footer */
+  footer{
+    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+  }
+ 
+  a, p, .footer-copyright{
+      color: white;
+  }
+
+  hr{
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+}
