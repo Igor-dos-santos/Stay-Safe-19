@@ -57,6 +57,7 @@ hr{
     color: white;
 }
 
+/* This centralize the map as well */
 .formInvite, .map{
     text-align: center;
     margin-top: 50px;
