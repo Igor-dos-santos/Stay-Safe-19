@@ -10,6 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
 <body>
 
@@ -40,10 +41,18 @@
 </nav>
 
  <div class="container">
-
     <div class="row">
       <div class="col-sm-12 mission-box">
-        <h2>Mission Statement</h2>
+        <h1 class="ml9">
+          <span class="text-wrapper">
+            <span class="letters">Mission Statement</span>
+          </span>
+        </h1>
+        <br>
+        <br>
+      </div>
+      <div class="col-sm-8 mission box">
+        <br>
         <br>
         <br>
         <h4>“Our mission is to deliver innovative solutions, with highest customer satisfaction ensuring every person in all communities is safe wherever they are.”</h4>
@@ -51,7 +60,11 @@
     </div> 
     <div class="row">
       <div class="col-sm-12 mission-box">
-        <h2>Vision Statement</h2>
+        <h1 class="ml9">
+          <span class="text-wrapper">
+            <span class="letters">Vision Statement</span>
+          </span>
+        </h1>
         <br>
         <br>
         <h4>“Our vision is to discover, develop and evolve items that will solve personal protective equipment issues, enhancing the lives of many.”</h4>
@@ -59,7 +72,11 @@
     </div> 
     <div class="row">
       <div class="col-sm-12 mission-box">
-        <h1 class="h1-value">Values</h1>
+        <h1 class="ml9">
+          <span class="text-wrapper">
+            <span class="letters">Values</span>
+          </span>
+        </h1>
         <br>
         <br>
       </div>  
@@ -178,6 +195,25 @@
   </footer>
   <!-- Footer -->
 
+  <script>
+    var textWrapper = document.querySelector('.ml9 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml9 .letter',
+    scale: [0, 1],
+    duration: 1500,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i+1)
+  }).add({
+    targets: '.ml9',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+  </script>
 
 </body>
 </html>
