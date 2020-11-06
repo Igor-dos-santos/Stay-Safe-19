@@ -1,25 +1,63 @@
-    /* Make carrousel image fully responsive */
-  .carousel-inner img {
+/* Make carrousel image fully responsive */
+.carousel-inner img {
     width: 70%;
     max-height: 500px;
-  }
+}
 
-    /* Navbar */
-  #navb{
+/* Navbar */
+#navb{
     background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
-  }
+}
 
-    /* Footer */
-  footer{
+/* Footer */
+footer{
     background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
-  }
+}
  
-  a, p, .footer-copyright{
+a, p, .footer-copyright{
       color: white;
   }
 
-  hr{
+hr{
     height: 1px;
     background-color: #ccc;
     border: none;
+}
+
+/* Contact form*/
+
+.forminfo{
+    text-align: justify;
+    width: 100%;
+    height: 350px;
+    border: 1px solid white;
+    margin-top: 100px;
+    margin: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: sans-serif;
+    transition: all 4s ease-in-out; /* Zoom-out effect */
+}
+    
+.forminfo input{
+    margin-top: 4px;
+    width: 96%;
+    height: 30px;
+}
+
+.forminfo textarea{
+    margin-top: 4px; 
+    width: 96%;
+    height: 120px;
+}
+    
+.forminfo p{
+    margin-top: 4px;
+    text-align: center;
+    color: white;
+}
+
+.formInvite{
+    text-align: center;
+    margin-top: 50px;
 }
