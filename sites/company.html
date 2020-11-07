@@ -43,83 +43,59 @@
  <div class="container">
     <div class="row">
       <div class="col-sm-12 mission-box">
-        <h1 class="ml9">
-          <span class="text-wrapper">
-            <span class="letters">Mission Statement</span>
-          </span>
-        </h1>
-        <br>
-        <br>
+        <div id="wrapper">
+              <h6 class="h6-animated">Mission Statement</h6>
+        </div>
       </div>
-      <div class="col-sm-8 mission box">
-        <br>
-        <br>
-        <br>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 mission-box">
         <h4>“Our mission is to deliver innovative solutions, with highest customer satisfaction ensuring every person in all communities is safe wherever they are.”</h4>
       </div>
     </div> 
     <div class="row">
       <div class="col-sm-12 mission-box">
-        <h1 class="ml9">
-          <span class="text-wrapper">
-            <span class="letters">Vision Statement</span>
-          </span>
-        </h1>
-        <br>
-        <br>
-        <h4>“Our vision is to discover, develop and evolve items that will solve personal protective equipment issues, enhancing the lives of many.”</h4>
-      </div>
-    </div> 
+        <div id="wrapper">
+          <h6 class="h6-animated">Vision Statement</h6>
+        </div>  
+      </div>  
+    </div>    
     <div class="row">
       <div class="col-sm-12 mission-box">
-        <h1 class="ml9">
-          <span class="text-wrapper">
-            <span class="letters">Values</span>
-          </span>
-        </h1>
-        <br>
-        <br>
+        <h7>“Our vision is to discover, develop and evolve items that will solve personal protective equipment issues, enhancing the lives of many.”</h4>
+      </div> 
+    </div>  
+    <div class="row">
+      <div class="col-sm-12 mission-box">
+        <div id="wrapper">
+          <h6 class="h6-animated">Values</h6>
+        </div>  
       </div>  
     </div> 
-    <div class="row">
-      <div class="col-sm-6 value-pictures-one">
-        <img src="../Images/heartbeat-solid.svg" alt="heart" width="50%">
-        <br>
-        <br>
-        <h2>Respect</h2>
+    <div class="row row-value">
+      <div class="col-sm-6 value-pictures">
+        <img src="../Images/heartbeat-solid.svg" alt="heart" width="50%" height="100%">
+        <h2 class="h2-value">Respect</h2>
       </div>
-      <div class="col-sm-6 value-pictures-two">
-        <img src="../Images/people-carry-solid.svg" alt="team-work" width="50%">
-        <br>
-        <br>
-        <br>
-        <h2>Team Work</h2>
+      <div class="col-sm-6 value-pictures">
+        <img src="../Images/people-carry-solid.svg" alt="team-work" width="50%" height="100%">
+        <h2 class="h2-value">Team Work</h2>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-6 value-pictures-one">
-        <br>
-        <br>
-        <img src="../Images/thumbs-up-solid.svg" alt="determination" width="50%">
-        <br>
-        <br>
-        <br>
-        <h2>Determination</h2>
+    <div class="row row-value">
+      <div class="col-sm-6 value-pictures">
+        <img src="../Images/thumbs-up-solid.svg" alt="determination" width="50%" height="100%">
+        <h2 class="h2-value">Determination</h2>
       </div>
-      <div class="col-sm-6 value-pictures-two">
-        <br>
-        <br>
-        <img src="../Images/hand-holding-heart-solid.svg" alt="result" width="50%">
-        <br>
-        <br>
-        <br>
-        <h2>Result</h2>
+      <div class="col-sm-6 value-pictures">
+        <img src="../Images/hand-holding-heart-solid.svg" alt="result" width="50%" height="100%">
+        <h2 class="h2-value">Result</h2>
       </div>
     </div>
- </div>
-<br>
-<!-- Footer -->
-<footer class="page-footer font-small indigo">
+  </div>
+  <br>
+  <!-- Footer -->
+  <footer class="page-footer font-small indigo">
 
     <!-- Footer Links -->
     <div class="container">
@@ -194,26 +170,6 @@
   
   </footer>
   <!-- Footer -->
-
-  <script>
-    var textWrapper = document.querySelector('.ml9 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml9 .letter',
-    scale: [0, 1],
-    duration: 1500,
-    elasticity: 600,
-    delay: (el, i) => 45 * (i+1)
-  }).add({
-    targets: '.ml9',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-  </script>
 
 </body>
 </html>
