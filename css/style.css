@@ -250,3 +250,9 @@ h4{
       transition: none !important;
     }
 }
+
+/* Products page */
+.containerProducts{
+ background-color: #4f20fb;
+ padding: 20px;
+}
