@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="Group_Project" content="Igor, Vinicius, Tamara, Fernando, Renee" />
+    <meta name="description" content="Shop/Information about Covid-19 Products" />
+    <meta name="Safe 19" content="HTML,CSS,XML,JavaScript">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--This is to make the page responsive to different devices-->
+    <link href="css/reset.css" rel="stylesheet"><!--Reset css file -->
+    <link rel="stylesheet" href="css/staySafe.css"> <!--MAIN css file -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!--From getBootstrap Css -->
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+  
+
+
+
+    <title>Stay Safe 19</title>
+  </head>
+  <body>
+    <!--This is the navigation bar -->
+    <div class="row" >
+      
+      <h1>Stay Safe 19</h1>
+    </div>
+
+    <div class="topnav" id="myTopnav">
+      <a href="staySafe_19.html" class="active">Home</a>
+      <a href="sites/products.html">Products</a>
+      <a href="sites/contact.html">Contact</a>
+      <a href="sites/company.html">The Company</a>
+      <div class="dropdown">
+        <button class="dropbtn">About us...
+          <i class="fa fa-caret-down"></i>
+
+        </button>
+        
+          
+        
+        <div class="dropdown-content">
+          <a href="#">IGOR DOS SANTOS</a>
+          <a href="subsite/aboutTamaraD.html">TAMARA DIAZ</a>
+          <a href="#">VINICIUS SILVA</a>
+          <a href="#">FERNANDO SEQUINELI</a>
+          <a href="#">RENEE SHARMAINE</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+
+    <!--Background Image with the logo-->
+    <div class="backgroundimage">
+      <img src="Images/LogoSafe.jpg" class="background1" alt="SAFE-19 LOGO COMPANY" width="100%">
+
+    </div>
+    
+      <!--Carrousel with Products-->
+  <div class="contProducts"> 
+    
+      <h2>Products</h2>
+
+      <div class="wrapper">
+<div id="carousel">
+  <div>
+    <img src="images/hybridMask.jpg" alt="picture-Mask-Hybrid" width="200" height="200" />
+    <span>Hybrid Mask -Face Mask</span>
+  </div>
+  <div>
+    <img src="images/hybridMask.jpg" alt="picture-Hand-sanitiser" width="200" height="200" />
+    <span>Hand Sanitiser - 100ml</span>
+  </div>
+  <div>
+    <img src="Images/hybridMask.jpg" alt="picture-T-shirt" width="200" height="200" />
+    <span>100% cotton t-shirt</span>
+  </div>
+  <div>
+    <img src="Images/hybridMask.jpg" alt="picture-Wipes" width="200" height="200" />
+    <span>Surface Disinfecting Wipes</span>
+  </div>
+  <div>
+    <img src="Images/hybridMask.jpg" alt="picture-FaceMask" width="200" height="200" />
+    <span>Mask with built-in valve or vent</span>
+  </div>
+  <div>
+    <img src="Images/hybridMask.jpg" alt="picture-TowelMask" width="200" height="200" />
+    <span>Tea Towel or Dishcloth Mask</span>
+  </div>
+  <div>
+    <img src="Images/hybridMask.jpg" alt="picture-Face-Shield" width="200" height="200" />
+    <span>Face-Shield</span>
+  </div>
+  <div>
+    <img src="Images/hybridMask.jpg" alt="picture-Aprons" width="200" height="200" />
+    <span>Disposable Aprons - 100</span>
+  </div>
+  <div>
+    <img src="Images/hybridMask.jpg" alt="picture-Head-Covering" width="200" height="200" />
+    <span>Head Disposable Covering</span>
+  </div>
+</div>
+<div id="pager"></div>
+</div>
+
+  </div>
+
+<footer>
+
+
+</footer>
+
+<script type="text/javascript" src="vendor/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/carous.js"></script>
+<script type="text/javascript" src="js/master.js"></script>
+
+  <script>
+    
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+  x.className += " responsive";
+   } else {
+    x.className = "topnav";
+}
+}
+  </script>
+  
+
+  </body>
+</html>
