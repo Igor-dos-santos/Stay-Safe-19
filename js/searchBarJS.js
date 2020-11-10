@@ -1,4 +1,55 @@
-const charactersList = document.getElementById('charactersList');
+async function getProducts() {
+    let url = '../XML/products1.xml';
+    try {
+        let res = await fetch(url);
+        return await res.json();
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+async function renderProducts() {
+    let users = await getProducts();
+    let html = '';
+    users.forEach(user => {
+        let htmlSegment = `<div class="user">
+                            <img src="${user.profileURL}" >
+                            <h2>${products.name} ${products.price}</h2>
+                            <div class="description"><a href="description:${products.description}">${products.description}</a></div>
+                        </div>`;
+
+        html += htmlSegment;
+    });
+
+    let container = document.querySelector('.container');
+    container.innerHTML = html;
+}
+
+renderProducts();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*const charactersList = document.getElementById('charactersList');
 const searchBar = document.getElementById('searchBar');
 let hpCharacters = [];
 
@@ -40,3 +91,4 @@ const displayCharacters = (characters) => {
 };
 
 loadCharacters();
+*/
