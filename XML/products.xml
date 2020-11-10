@@ -10,8 +10,8 @@
 
 
 <product category="wearable">
-    <name>Face_Mask</name>
-    <material>Fabric</material>
+    <name>Reusable_Face_Mask</name>
+    <material>Cotton</material>
     <quantity>5</quantity>
     <price>3.99</price>
 </product>
@@ -53,7 +53,7 @@
 
 <product category="sanitising">
     <name>Wet_Wipes</name>
-    <material>Alcohol_Fabric</material>
+    <material>Alcohol_Cotton</material>
     <quantity>50</quantity>
     <price>2.99</price>
 </product>

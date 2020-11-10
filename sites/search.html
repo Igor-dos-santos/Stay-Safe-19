@@ -10,6 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
 <body>
 
@@ -49,7 +50,12 @@
 from a tutorial on YouTube (https://www.youtube.com/watch?v=wxz5vJ1BWrc&t=3s&ab_channel=JamesQQuick) -->
 
 <div class="container">
-  <h1 class="search">Search your Product here </h1> <!-- The header above the search bar  -->
+  <h1 class="search">
+    <span class="text-wrapper">
+      <span class="letters">Search your Product here</span> <!-- The header above the search bar  -->
+    </span>
+  </h1> 
+  
   <div id="searchWrapper">
       <input
           type="text"
