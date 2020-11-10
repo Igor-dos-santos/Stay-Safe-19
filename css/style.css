@@ -90,9 +90,10 @@ hr{
 .aboutP{
     line-height: 1.5;
     text-align: justify;
+    font-size: 14px;
 }
 .namesA{
-    font-size: 25px;
+    font-size: 23px;
 }
 #picTamara{
     border-radius: 55px;
@@ -164,16 +165,36 @@ h4{
     padding: 15px 15px;
     margin-top: 5px;
     text-align: center;
+    color:white;
 }
 
 .row-value{
     margin-bottom: 50px;
+    
+}
+
+.rowtop{
+    margin-bottom: 15%;
 }
 
 .h2-value{
     margin-top: 20px;
     margin-bottom: 40px;
+    color:white;
 }
+.maintext{
+    color:white;
+    line-height: 2;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.maintext1{
+    color:white;
+    line-height: 2;
+    margin-bottom: 20%;
+}
+
 
 /* Animates text content */
 
@@ -188,6 +209,7 @@ h4{
 #wrapper {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 15%;
     max-width: 80em;
 }
 
