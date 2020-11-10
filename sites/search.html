@@ -44,37 +44,27 @@
   </div>  
 </nav>
 
- <div class="containerProducts">
+<!--  This whole section is about the search bar in the search page  -->
+<!-- This search bar is a variation of the following example (https://codepen.io/jamesqquick/pen/XWJxBQv) 
+from a tutorial on YouTube (https://www.youtube.com/watch?v=wxz5vJ1BWrc&t=3s&ab_channel=JamesQQuick) -->
 
-  
-<h2>Search: </h2>
-
-<div>
-    <label for="code">Code:</label>
-    <input type="text" id="code" name="code" required size="10">
-    <button id="search" type="button" >Search</button>
+<div class="container">
+  <h1 class="search">Search your Product here </h1> <!-- The header above the search bar  -->
+  <div id="searchWrapper">
+      <input
+          type="text"
+          name="searchBar"
+          id="searchBar"
+          placeholder="search for a Product"
+      />
   </div>
-
-  <div id="result">
-  </div>
-
-
-
-
-
-
-
-   <p style="color: coral;">All content here</p>
-
-
-
-
-
-
-
-
- </div>
+  <ul id="productsList"></ul>
+</div>
+<script src="../js/searchBarJS.js"></script> <!-- This is the temporary JS file to be linked -->
+ <!--  End of the search bar -->
 <br>
+
+
 <!-- Footer -->
 <footer class="page-footer font-small indigo">
 
