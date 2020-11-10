@@ -13,7 +13,7 @@ async function renderProducts() {
     let html = '';
     users.forEach(user => {
         let htmlSegment = `<div class="user">
-                            <img src="${user.profileURL}" >
+                            
                             <h2>${products.name} ${products.price}</h2>
                             <div class="description"><a href="description:${products.description}">${products.description}</a></div>
                         </div>`;

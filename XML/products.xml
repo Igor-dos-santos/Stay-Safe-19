@@ -25,7 +25,8 @@
 </product>
 
 
-<product category="wearable">
+<product category="wearable"
+
     <name>Reusable-Gloves</name>
     <material>Latex</material>
     <quantity>30</quantity>
@@ -81,9 +82,4 @@
     <price>2.99</price>
 </product>
 
-
-<<<<<<< HEAD
 </products>
-=======
-</products>
->>>>>>> 7bbcfaa4875e39140b60877bfee250f3841ef593
