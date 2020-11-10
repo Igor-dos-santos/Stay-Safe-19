@@ -2,7 +2,7 @@
 <products>
 
 <product category="wearable">
-    <name>Face-Mask</name>
+    <name>Face_Mask</name>
     <material>Plastic</material>
     <quantity>10</quantity>
     <price>2.99</price>
@@ -10,7 +10,7 @@
 
 
 <product category="wearable">
-    <name>Face-Mask</name>
+    <name>Face_Mask</name>
     <material>Fabric</material>
     <quantity>5</quantity>
     <price>3.99</price>
@@ -18,7 +18,7 @@
 
 
 <product category="wearable">
-    <name>Disposable-Gloves</name>
+    <name>Disposable_Gloves</name>
     <material>Plastic</material>
     <quantity>50</quantity>
     <price>3.99</price>
@@ -27,7 +27,7 @@
 
 <product category="wearable"
 
-    <name>Reusable-Gloves</name>
+    <name>Reusable_Gloves</name>
     <material>Latex</material>
     <quantity>30</quantity>
     <price>5.99</price>
@@ -36,7 +36,7 @@
 
 
 <product category="sanitising">
-    <name>Alcohol-Gel</name>
+    <name>Alcohol_Gel</name>
     <material>Alcohol</material>
     <quantity>10</quantity>
     <price>5.99</price>
@@ -44,7 +44,7 @@
 
 
 <product category="sanitising">
-    <name>Alcohol-Gel-Portable</name>
+    <name>Alcohol_Gel_Portable</name>
     <material>Alcohol</material>
     <quantity>1</quantity>
     <price>0.99</price>
@@ -52,8 +52,8 @@
 
 
 <product category="sanitising">
-    <name>Wet-Wipes</name>
-    <material>Alcohol-Fabric</material>
+    <name>Wet_Wipes</name>
+    <material>Alcohol_Fabric</material>
     <quantity>50</quantity>
     <price>2.99</price>
 </product>
@@ -69,14 +69,14 @@
 
 <product category="medicine">
     <name>Vitamins</name>
-    <material>Multi-vitamin-Capsules</material>
+    <material>Multi-vitamin_Capsules</material>
     <quantity>100</quantity>
     <price>5.99</price>
 </product>
 
 
 <product category="medicine">
-    <name>Cough-Syrup</name>
+    <name>Cough_Syrup</name>
     <material>Propolis</material>
     <quantity>1</quantity>
     <price>2.99</price>
