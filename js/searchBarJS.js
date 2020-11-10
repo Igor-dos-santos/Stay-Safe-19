@@ -1,5 +1,5 @@
 async function getProducts() {
-    let url = '../XML/products1.xml';
+    let url = '';
     try {
         let res = await fetch(url);
         return await res.json();
