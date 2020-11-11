@@ -8,69 +8,49 @@
         Purpose of transformation follows.
 -->
 
-<xsl:transform xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-    <xsl:output method="html"/>
-
-    <!-- TODO customize transformation rules 
-         syntax recommendation http://www.w3.org/TR/xslt 
-    -->
-    
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
+
         <html>
-            <head>
-                <title>Products from Stay Safe 19</title>
-            </head>
-            <body>
-                
-                    <a href="index.html">Back</a>
-              <!--1. All products names-->
-              <h2>All products names:</h2>
-              <xsl:apply-templates select="/shop/products/product/name"/>
 
-              <!--2. Categories for products-->
-              <h2>Products category:</h2>
-              <xsl:apply-templates select="/shop/products/product/category"/>
+        <head>
+            <title>Products from Stay Safe 19</title>
+        </head>
 
-              <!--3. Products id numbers -->
-              <h2>Product id's :</h2>
-              <xsl:apply-templates select="/shop/products/product/id"/>
+        <body>
 
-              <!--4. Quantity more than 300-->
-              <h2>Units quantity more than 300:</h2> 
-              <xsl:apply-templates select="/shop/products/product[quantity>'300']"/>
+            <h1 align="center">Companies I have found</h1>
+            <table style="width:70%;" border="1">
+                <xsl:for-each select="/products/product">
+                    <tr>
 
-              <!--5. Products costing more than 10 -->
-              <h2>Products more expensice than 10 euros:</h2>
-              <xsl:apply-templates select="/shop/products/product[price>'10']"/>
-                  
-            </body>
+                        <th>
+                            <xsl:value-of select="category" />
+                        </th>
+                        <th>
+                            <xsl:value-of select="id" />
+                        </th>
+                        <th>
+                            <xsl:value-of select="name" />
+                        </th>
+                        <th>
+                            <xsl:value-of select="description" />
+                        </th>
+                        <th>
+                            <xsl:value-of select="quantity" />
+                        </th>
+                        <th>
+                            <xsl:value-of select="price" />
+                        </th>
+
+                    </tr>
+                </xsl:for-each>
+            </table>
+        </body>
+
         </html>
     </xsl:template>
-    
-    <!--1. All products names-->
-  <xsl:template match="name">
-    <p><xsl:value-of select="." /></p>
-  </xsl:template>
 
- <!--2. Categories for products-->
-  <xsl:template match="category">
-    <p><xsl:value-of select="category" /></p>
-  </xsl:template>
 
-  <!--3. Products id numbers -->
-  <xsl:template match="id">
-    <p><xsl:value-of select="../@id" /></p>
-  </xsl:template>
 
-  <!--4. Quantity more than 300-->
-  <xsl:template match="product[quantity>'300']">
-    <p><xsl:value-of select="title" />, <xsl:value-of select="quantity"</p>
-  </xsl:template>
-
-  <!--5. Products costing more than 10 -->
-  <xsl:template match="product[price>'10']">
-    <p><xsl:value-of select="title" />, <xsl:value-of select="price"/>,<xsl:value-of select="id"/></p>
-  </xsl:template>
-
-</xsl:transform>
-
+</xsl:stylesheet>
