@@ -52,7 +52,7 @@ function searchCode() {
       }
   
       if ( !found ) {
-        alert( "Book is not registered" );
+        alert( "Product not found" );
       }
     } );
   }
