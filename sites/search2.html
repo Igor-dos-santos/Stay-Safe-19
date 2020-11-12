@@ -7,11 +7,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/reset.css">
-  <script defer="defer" src="../js/search.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
 <body>
 
@@ -26,13 +25,13 @@
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class="nav-link" href="../index.html">Home</a>
-      </li>
+     </li>
       <li class="nav-item">
         <a class="nav-link" href="../XML/products.xml">Products</a>
-      </li>
+     </li>
         <li class="nav-item">
-          <a class="nav-link" href="search.html">Search</a>
-        </li>
+            <a class="nav-link" href="search.html">Search</a>
+          </li>
       <li class="nav-item">
         <a class="nav-link" href="contact.html">Contact</a>
       </li>
@@ -46,21 +45,39 @@
   </div>  
 </nav>
 
+<!--  This whole section is about the search bar in the search page  -->
+<!-- This search bar is a variation of the following example (https://codepen.io/jamesqquick/pen/XWJxBQv) 
+from a tutorial on YouTube (https://www.youtube.com/watch?v=wxz5vJ1BWrc&t=3s&ab_channel=JamesQQuick) -->
 
-    <div style="padding: 20px;">
-          <p><a href="../XML/products.xml">Open Products</a></p> 
-          <br>
-          <label for="code"></label>
-          <input type="text" id="code" name="code" required size="10">
-          <button id="search" type="button" >Search</button>        
-    </div>
-      
-      
-    
-      <div id="result" style="padding: 15px; margin-top: 30px; margin-left: 20px;"></div>
-    
+<div class="container"> <!-- This div is right below the navbar and contais the search bar -->
+  <h1 class="search">
+    <span class="text-wrapper">
+      <span class="letters">Search your Product here</span> <!-- The header above the search bar  -->
+    </span>
+  </h1> 
   
+  <div id="searchWrapper">
+      <input
+          type="text"
+          name="searchBar"
+          id="searchBar"
+          placeholder="search for a Product"/>  <!-- This part holds the content inside the search bar-->
+      
+  </div>
+  <ul id="productsList"></ul>
+</div>
+<script src="../js/searchBarJS.js"></script> <!-- This is the temporary JS file to be linked -->
 <br>
+<!--  End of the search bar -->
+
+
+<!-- This is the middle part of the website containing the products grid to be displayed -->
+    <div class="container"></div>
+    <script src="../js/searchBarJS.js"></script>
+<!-- end of the middle part with the products -->
+
+
+
 <!-- Footer -->
 <footer class="page-footer font-small indigo">
 
