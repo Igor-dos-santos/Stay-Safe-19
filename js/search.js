@@ -1,7 +1,7 @@
-var search = document.getElementById("search2");
+var search = document.getElementById("search");
 search.addEventListener("click", searchCode);
 
-var xmlFilename = "../XML/products1.xml";
+var xmlFilename = "../XML/products.xml";
 
 function searchCode() {
     var codeSearch = document.getElementById( "code" ).value;
