@@ -47,16 +47,26 @@
 </nav>
 
 
-<div style="padding: 20px;">
-  <p><a href="../XML/products.xml">Open Products</a></p> 
-  <br>
-  <label for="code"></label>
-  <input type="text" id="code" name="code" required size="10">
-  <button id="search" type="button" >Search</button>        
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1 class="search">
+        <span class="text-wrapper">
+          <span class="letters">Search your Product by ID here</span> <!-- The header above the search bar  -->
+        </span>
+      </h1> 
+    </div>  
+  </div>
+  <div class="row">
+    <div class="col-sm-10">
+      <div style="padding: 20px;">
+        <label for="code"></label>
+        <input type="text" id="code" name="code">
+        <button id="search" type="button">Search</button>        
+      </div>
+    </div>
+  </div>
 </div>
-
-
-
 <div id="result" style="padding: 15px; margin-top: 30px; margin-left: 20px;"></div>
 
 
