@@ -39,7 +39,7 @@
 		<product id="444">
             
             <category>Wearable</category>
-            <id>4</id>
+            <id>444</id>
             <name>Two-layer cotton mask</name>
 			<description>99.5% Efficient filtering 
 			droplets and 82% Aerosols. Indicated for Public Indoor and crowded areas.</description>
@@ -50,7 +50,7 @@
 		<product id="555">
             
             <category>Wearable</category>
-            <id>5</id>
+            <id>555</id>
             <name>Tea Towel or Dishcloth</name>
 			<description>98% Efficient filtering 
 			droplets and 72.5% Aerosols. Indicated for Outdoor aereas.</description>
@@ -61,7 +61,7 @@
 		<product id="666">
             
             <category>Wearable</category>
-            <id>6</id>
+            <id>666</id>
             <name>100% cotton t-shirt</name>
 			<description>97% Efficient filtering 
 			droplets and 51% Aerosols. Indicated for Outdoor aereas</description>
@@ -72,7 +72,7 @@
 		<product id="777">
             
             <category>Wearable</category>
-            <id>7</id>
+            <id>777</id>
             <name>Natural Silk</name>
 			<description>56% Efficient filtering 
 			droplets and 54% Aerosols. Indicated for Outdoor aereas</description>
@@ -83,7 +83,7 @@
 		<product id="888">
             
             <category>Wearable</category>
-            <id>8</id>
+            <id>888</id>
             <name>Mask with built-in valve or vent</name>
 			<description>90% Efficient filtering 
 			droplets and 90% Aerosols. Indicated for Outdoor aereas</description>
@@ -94,7 +94,7 @@
 		<product id="999">
             
             <category>Cleaning and Disinfecting</category>
-            <id>9</id>
+            <id>999</id>
             <name>Surface Disinfecting Wipes</name>
 			<description>Kills 99.9% Viruses and Bacteria</description>
 			<quantity>850</quantity>
@@ -104,7 +104,7 @@
 		<product id="1000">
             
             <category>Cleaning and Disinfecting</category>
-            <id>10</id>
+            <id>1000</id>
             <name>Hands Wipes</name>
 			<description>Antimicrobial Hand Wipes are dermatologically tested. They are perfect pocket essentials</description>
 			<quantity>800</quantity>
