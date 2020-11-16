@@ -78,3 +78,24 @@ function searchCode() {
     return xmlDoc;
   }
   
+
+
+  // animation to the search bar H1
+  // Wrap every letter in a span
+var textWrapper = document.querySelector('.search .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+// example from https://tobiasahlin.com/moving-letters/#9 (open source)
+anime.timeline({loop: true})
+  .add({
+    targets: '.search .letter', // this part targets the h1 element by id search
+    scale: [0, 1],
+    duration: 1500,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i+1)
+  }).add({
+    targets: '.search', // functionality to the moving letters
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  }); // end of the animation to the search bar H1
